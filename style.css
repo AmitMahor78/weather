@@ -1,0 +1,270 @@
+.weather-app {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#city-input {
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+#search-btn {
+  width: 30%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#weather-info {
+  margin-top: 20px;
+}
+
+#city-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#temperature {
+  font-size: 20px;
+}
+
+#description {
+  font-size: 18px;
+  color: #666;
+}
+
+#wind-speed {
+  font-size: 18px;
+  color: #666;
+}
+h1{
+    
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s infinite,
+    cursor .4s step-end infinite alternate;
+    
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+    
+}
+@keyframes typing{
+    from{
+       width:0;
+    }
+}
+body{
+            height: 100vh;
+            width: 100vw;
+        /* background-image: url(images.jpeg); */
+            background: url(i5.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+           
+
+        }
+        .image{
+             display: flex;
+            justify-content: center;
+        }
+        #inp
+        {
+           width: 300px;
+           height: 50px;
+           border-radius: 4%;
+          
+        }
+@keyframes spin{
+    0%{
+        background: url(i5.jpg);
+    background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+    }
+    20%{
+        background:url(I1.jpg) ;
+         background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+   
+    }
+    40%{
+        background:url(i2.avif) ;
+         background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+    }
+    60%{
+        background:url(i3.avif);
+         background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+    }
+    80%{
+        background: url(i4.jpg);
+         background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+    }
+    100%{
+
+        background: url(i5.jpg);
+         background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: 5s spin  infinite;
+
+   
+    }
+
+}
+.container{
+  
+  text-align: center;
+  height: 450px;
+  width: 450px;
+  background-color: #1845ce;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  animation:5s col  infinite;
+  animation: 1s load infinite;
+  border: 7px solid;
+  border-radius: 5px;
+  border-top-color:rgb(8, 235, 64) ;
+  
+}
+@keyframes load {
+   33%{
+border-right-color:rgb(8, 235, 64) ;
+   }
+   66%{
+border-bottom-color:rgb(8, 235, 64) ;
+   }
+   100%{
+    border-left-color:rgb(8, 235, 64) ;
+   }
+  
+}
+@keyframes col {
+
+25%{
+  background-color: #233f85;
+}
+
+50%{
+  background-color: #a04cd4;
+   
+}
+75%{
+  background-color: #11e16f;
+  
+}
+100%{
+  background-color: #db14bd;
+   
+}
+
+}
+
+#city{
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+}
+/* From Uiverse.io by cssbuttons-io */ 
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
